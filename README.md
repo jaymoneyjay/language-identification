@@ -22,14 +22,14 @@ With the TRAINING flag set to true the model will be trained from scratch.
 To test the model one can either:
 * Use the method **predict_sentence(text, model)** to predict a single phrase.
 
-```bash
+```python
 sample_string = "Hell is empty and all the devils are here."
-predict_sentence(sample_string_eng, model)    //"eng"
+predict_sentence(sample_string_eng, # -> "eng"
 ```
 
 * Generate a custom dataset from a csv file and use the method **test_dataset(dataset, model)** to test the accuracy of the model over the specified dataset. The csv file is expected to have the format ['index', 'lang', 'text'].
 
-```bash
+```python
 custom_dataset = CustomDataset("sample.csv", vocab)
 test_data(data_set, model)
 ```
