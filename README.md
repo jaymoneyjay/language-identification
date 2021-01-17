@@ -27,7 +27,7 @@ sample_string = "Hell is empty and all the devils are here."
 predict_sentence(sample_string_eng, model)	# -> "eng"
 ```
 
-* Generate a custom dataset from a csv file and use the method **test_dataset(dataset, model)** to test the accuracy of the model over the specified dataset. The csv file is expected to have the format ['index', 'lang', 'text'].
+* Generate a custom dataset from a csv file and use the method **test_dataset(dataset, model)** to test the accuracy of the model over the specified dataset.
 
 ```python
 custom_dataset = CustomDataset("sample.csv", vocab)
@@ -35,3 +35,32 @@ test_data(data_set, model)
 ```
 
 Examples are included in the code.
+
+## Data
+The data is expected to be a .csv file and be stored in the data directory. The format should follow ['index', 'lang', 'text'].
+
+The file sample.csv provides some sample data to showcase this format.
+
+The language identifiers are the following:
+
+| Language   | Identifier |
+|------------|------------|
+| English    | eng        |
+| German     | deu        |
+| French     | fra        |
+| Esperanto  | epo        |
+| Kabyle     | kab        |
+| Russian    | rus        |
+| Turkish    | tur        |
+| Portuguese | por        |
+| Spanish    | spa        |
+| Berber     | ber        |
+| Hungarian  | hun        |
+| Japanese   | jpn        |
+| Hebrew     | heb        |
+| Ukrainian  | ukr        |
+| Italian	   | ita			|
+| Dutch		| nld			|
+| Finnish		| fin			|
+| Polish		| pol			|
+| Latin		| lat			|
