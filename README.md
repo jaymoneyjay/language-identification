@@ -37,6 +37,8 @@ test_data(data_set, model)
 Examples are included in the code.
 
 ## Data
+The data for training is not included in the repository due to it's large size. It can be downloaded from: https://downloads.tatoeba.org/exports/sentences.csv
+
 The data is expected to be a .csv file and be stored in the data directory. The format should follow ['index', 'lang', 'text'].
 
 The file sample.csv provides some sample data to showcase this format.
