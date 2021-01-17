@@ -27,11 +27,10 @@ sample_string = "Hell is empty and all the devils are here."
 predict_sentence(sample_string_eng, model)	# -> "eng"
 ```
 
-* Generate a custom dataset from a csv file and use the method **test_dataset(dataset, model)** to test the accuracy of the model over the specified dataset.
+* Use the method **test_dataset(csv_file, model)** to test the accuracy of the model over the dataset generated from the specified csv_file.
 
 ```python
-custom_dataset = CustomDataset("sample.csv", vocab)
-test_data(data_set, model)
+test_dataset(csv_file, model)
 ```
 
 Examples are included in the code.
